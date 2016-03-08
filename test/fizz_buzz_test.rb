@@ -36,4 +36,11 @@ class FizzBuzzTest < Minitest::Test
     assert_equal '2014', @fb.convert(2014)
   end
 
+  def test_raises_error_for_bad_argument
+    skip "to-do"
+   assert_raises(ArgumentError) {@fb.convert('foo')}
+  end
+
+
+
 end

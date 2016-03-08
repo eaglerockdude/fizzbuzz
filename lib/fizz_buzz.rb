@@ -1,4 +1,4 @@
-# minitest
+# testing class for minitest testing.
 
 # if number passed in is divisible by 5 and 3 return "Fizzbuzz"
 # else if only divisible by 3 return "Fizz"  else if only by 5 "Buzz"
