@@ -2,7 +2,7 @@
 
 class FizzBuzzIterator
   def initialize(start = 1)
-    @counter = 1
+    @counter = start
     @fb = FizzBuzz.new
   end
 

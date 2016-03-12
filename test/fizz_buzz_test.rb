@@ -36,6 +36,7 @@ class FizzBuzzTest < Minitest::Test
     assert_equal '2014', @fb.convert(2014)
   end
 
+  # skip can be used for work in progress
   def test_raises_error_for_bad_argument
     skip "to-do"
    assert_raises(ArgumentError) {@fb.convert('foo')}

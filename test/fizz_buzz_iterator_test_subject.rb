@@ -3,9 +3,14 @@ require 'fizz_buzz_iterator'
 
 describe FizzBuzzIterator do
 
-  before do
-    @iterator = FizzBuzzIterator.new
-  end
+  # before do
+  #   @iterator = FizzBuzzIterator.new
+  # end
+
+  # the subject functions works like the LET function in that it redefines a LET block
+  # with the same name.
+
+    subject(FizzBuzzIterator.new)
 
   it "outputs sequential values starting from 1"  do
     expect(@iterator.next).must_equal '1'
@@ -22,9 +27,11 @@ describe FizzBuzzIterator do
   describe "when initialized with a starting value"   do
 
     ## this before applies to this block or its "local"
-    before do
-      @iterator = FizzBuzzIterator.new(10)
-    end
+    # before do
+    #   @iterator = FizzBuzzIterator.new(10)
+    # end
+
+    subject(FizzBuzzIterator.new(10))
 
     it "outputs sequential values starting from the starting value"  do
       expect(@iterator.next).must_equal 'Buzz'
