@@ -8,6 +8,7 @@ require "minitest/pride"
 #   end
 # end
 
+# simple comment added to test pull/merge.
 
 @mock = Minitest::Mock.new
 
